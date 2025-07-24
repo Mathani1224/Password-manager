@@ -63,9 +63,9 @@ def get_user_input():
         except ValueError:
             print("Invalid input! Please enter an integer value of at least 4.")
 
-    include_uppercase = input("Include uppercase letters? (yes/no): ").strip().lower() == 'y'
-    include_numbers = input("Include numbers? (yes/no): ").strip().lower() == 'y'
-    include_symbols = input("Include symbols? (yes/no): ").strip().lower() == 'y'
+    include_uppercase = input("Include uppercase letters? (yes/no): ").strip().lower() == 'yes'
+    include_numbers = input("Include numbers? (yes/no): ").strip().lower() == 'yes'
+    include_symbols = input("Include symbols? (yes/no): ").strip().lower() == 'yes'
 
     return length, include_uppercase, include_numbers, include_symbols
 
